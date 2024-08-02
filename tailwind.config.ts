@@ -6,12 +6,50 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "media",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: {
+          light: "#ff5733", 
+          dark: "#e03e00",
+        },
+        secondary: {
+          light: "#33c1ff", 
+          dark: "#1a90cc", 
+        },
+        accent: {
+          light: "#ffc133", 
+          dark: "#cc9f1a", 
+        },
+        background: {
+          light: "#f0f0f0", 
+          dark: "#18191B", 
+        },
+        secondaryBackground: {
+          light: "#f0f0f0", 
+          dark: "#101011", 
+        },
+        text: {
+          light: "#333333", 
+          dark: "#e0e0e0", 
+        },
+        border: {
+          light: "#cccccc",
+          dark: "#444444", 
+        },
+        success: {
+          light: "#28a745",
+          dark: "#1e7e34", 
+        },
+        warning: {
+          light: "#ffc107", 
+          dark: "#e0a800", 
+        },
+        error: {
+          light: "#dc3545",
+          dark: "#bd2130",
+        },
       },
     },
   },
