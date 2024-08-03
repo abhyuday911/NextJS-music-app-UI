@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "../../ui/searchBar/SearchBar";
 import AlbumTrack from "../albumTrack/AlbumTrack";
+import SongList from "../songLists/SongList";
 
 const data = [
   {
@@ -44,12 +45,44 @@ const data = [
     cover: "https://i.scdn.co/image/ab67616d0000b2731d8e8e0d8a5c7e9b2e9e9e9e",
   },
 ];
+const songs = [
+  {
+    title: "Shape of You",
+    artist: "Ed Sheeran",
+    lastPlayed: "4 mins ago",
+    albumSrc:
+      "https://i.scdn.co/image/ab67616d0000b273d98c789b5f6e3a9dbb1b7a9e",
+  },
+  {
+    title: "Blinding Lights",
+    artist: "The Weeknd",
+    lastPlayed: "10 mins ago",
+    albumSrc:
+      "https://i.scdn.co/image/ab67616d0000b273b2c08d0c09432b109f8c1d72",
+  },
+  {
+    title: "Levitating",
+    artist: "Dua Lipa",
+    lastPlayed: "20 mins ago",
+    albumSrc:
+      "https://i.scdn.co/image/ab67616d0000b273d217e5b4e2e3a5a5f2c4a3b1",
+  },
+  {
+    title: "Peaches",
+    artist: "Justin Bieber",
+    lastPlayed: "35 mins ago",
+    albumSrc:
+      "https://i.scdn.co/image/ab67616d0000b273f3b0e8b5a5c5a3d8e2c3b9a7",
+  },
+];
 
 const MainLayout = () => {
   return (
-    <div className="w-full pl-16 pr-2 lg:pl-8 lg:px-8 pb-20 overflow-y-auto max-h-screen">
+    <div className="w-full px-4 lg:px-8 pb-20 overflow-y-auto max-h-screen">
       <SearchBar />
-      <div className="flex h-[20vmax] bg-slate-600 rounded-lg mt-8 mb-8"></div>
+      <div className="flex h-[20vmax] bg-slate-600 rounded-lg my-6 mb-4 md:my-8"></div>
+      <SongList title={"Recently Played"} mobile={true} list={songs} />
+      <SongList title={"My Playlists"} mobile={true} list={songs} />
       <AlbumTrack title={"Hello, Wolion"} data={data} />
       <AlbumTrack title={"This Season Special"} data={data} />
       <AlbumTrack title={"Party Anthems"} data={data} />
