@@ -5,10 +5,10 @@ import React, { use, useState } from "react";
 const Player = () => {
   const [value, setValue] = useState(30);
   return (
-    <div className="h-20 bg-secondaryBackground-dark flex-shrink-0 absolute border-t-[1.2px] border-zinc-500 bottom-0 z-30 w-full">
-      <div className="group">
+    <div className="h-20 bg-secondaryBackground-dark flex-shrink-0 absolute bottom-0  z-30 w-full ">
+      <div className="group w-screen h-[2px] bg-gray-400 absolute top-0">
         <div
-          className={`h-[2px] bg-blue-500 absolute bottom-full hover:h-2`}
+          className={`h-[2px] bg-blue-500 absolute top-0`}
           style={{ width: `${value}%`}}
         ></div>
         <input
@@ -17,7 +17,7 @@ const Player = () => {
           id=""
           value={value}
           onChange={(e) => setValue(Number(e.target.value))}
-          className='w-full h-[2px]  absolute bottom-full group-hover:h-[4px] cursor-pointer hidden group-hover:block'
+          className='w-full h-[2px]  absolute top-0 group-hover:h-[3px] cursor-pointer hidden group-hover:block'
         />
       </div>
       <div className="flex items-center justify-between h-full px-6 ">
