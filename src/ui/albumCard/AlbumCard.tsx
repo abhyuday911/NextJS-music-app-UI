@@ -9,7 +9,7 @@ interface Props {
 
 const AlbumCard: React.FC<Props> = ({ title, artist, cover }) => {
   return (
-    <div className=" w-1/2 max-w-44 rounded-md overflow-hidden mt-3 mb-2 flex-shrink-0 cursor-pointer hover:scale-105 transition-scale duration-300 animate-wiggle animate-twice animate-ease-in-out">
+    <div className=" w-2/5 max-w-44 rounded-md overflow-hidden mt-3 mb-2 flex-shrink-0 cursor-pointer hover:scale-105 transition-scale duration-300 animate-wiggle animate-twice animate-ease-in-out">
       <div className="aspect-square w-full relative">
         <Image
           src="https://via.placeholder.com/400x400"
