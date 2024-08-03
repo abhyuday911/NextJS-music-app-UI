@@ -47,12 +47,12 @@ const data = [
 
 const MainLayout = () => {
   return (
-    <div className="w-full pl-16 pr-2 lg:pl-8 lg:px-8 overflow-y-auto max-h-screen">
+    <div className="w-full pl-16 pr-2 lg:pl-8 lg:px-8 pb-20 overflow-y-auto max-h-screen">
       <SearchBar />
-      <div className="flex h-[20vmax] bg-slate-600 rounded-lg mt-8"></div>
+      <div className="flex h-[20vmax] bg-slate-600 rounded-lg mt-8 mb-8"></div>
       <AlbumTrack title={"Hello, Wolion"} data={data} />
-      <AlbumTrack title={"Hello, Wolion"} data={data} />
-      <AlbumTrack title={"Hello, Wolion"} data={data} />
+      <AlbumTrack title={"This Season Special"} data={data} />
+      <AlbumTrack title={"Party Anthems"} data={data} />
     </div>
   );
 };

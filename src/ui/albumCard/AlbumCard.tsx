@@ -7,15 +7,15 @@ interface Props {
   cover: string;
 }
 
-const AlbumCard:React.FC<Props> = ({ title, artist, cover }) => {
+const AlbumCard: React.FC<Props> = ({ title, artist, cover }) => {
   return (
-    <div className=" w-1/2 max-w-44 rounded-md overflow-hidden my-4 flex-shrink-0 cursor-pointer hover:scale-105 transition-scale duration-300">
+    <div className=" w-1/2 max-w-44 rounded-md overflow-hidden mt-3 mb-2 flex-shrink-0 cursor-pointer hover:scale-105 transition-scale duration-300 animate-wiggle animate-twice animate-ease-in-out">
       <div className="aspect-square w-full relative">
         <Image
-          src="https://via.placeholder.com/400x300"
+          src="https://via.placeholder.com/400x400"
           alt="album"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="py-2">

@@ -35,9 +35,10 @@
 }
 
 /* Custom scrollbar style to hide the scrollbar */
-.custom-scroll::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0px;
   height: 0px;
+  /* display: none; */
   /* Chrome, Safari, Opera */
 }
 

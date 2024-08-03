@@ -29,7 +29,7 @@ const MenuDrawer = () => {
     <div
       className={`flex flex-col ${
         isOpen ? "w-60" : "md:w-16"
-      } bg-secondaryBackground-dark text-white h-screen transition-width duration-300 flex-shrink-0 absolute lg:static`}
+      } bg-secondaryBackground-dark text-white h-screen transition-width duration-300 flex-shrink-0 absolute lg:static z-10`}
     >
       <div className="flex items-center justify-between p-4 h-16">
         <Link href="/"
