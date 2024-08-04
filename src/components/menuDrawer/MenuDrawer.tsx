@@ -16,6 +16,18 @@ const sidepanel = [
     name: "Collections",
     icon: "folder-music-line",
   },
+  {
+    name: "Downloads",
+    icon: "download-2-line",
+  },
+  {
+    name: "Favourites",
+    icon: "heart-3-line",
+  },
+  {
+    name: "Local Files",
+    icon: "folder-reduce-line",
+  },
 ];
 
 const MenuDrawer = () => {
@@ -27,7 +39,7 @@ const MenuDrawer = () => {
 
   return (
     <>
-      <div className="absolute top-0 lg:hidden p-2 h-20 flex items-center justify-center text-zinc-400">
+      <div className="absolute top-0 lg:hidden p-2 h-20 flex items-center justify-center text-zinc-400 z-10">
         <button onClick={toggleDrawer} className="ri-xl">
           <i className={`ri-menu-${isOpen ? "fold" : "unfold"}-line`}></i>
         </button>
@@ -58,11 +70,11 @@ const MenuDrawer = () => {
                 className="flex items-center p-4 hover:bg-zinc-900 cursor-pointer h-12"
               >
                 <i className={`ri-${item.icon} ri-xl`}></i>
-                <span className={`${isOpen ? "ml-3" : "hidden"}`}>
+                <span className={`${isOpen ? "ml-3" : "hidden"} text-nowrap`}>
                   {item.name}
                 </span>
               </li>
-              {index === 3 && <br />}
+              {index === 2 && <br />}
             </React.Fragment>
           ))}
         </ul>

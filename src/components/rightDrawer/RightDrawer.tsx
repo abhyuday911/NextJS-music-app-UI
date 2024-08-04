@@ -4,7 +4,6 @@ import SongList from "../songLists/SongList";
 import { songs } from "../../data/songLists";
 import { playlists } from "../../data/playLists";
 
-
 const RightDrawer = () => {
   return (
     <div className="w-2/6 bg-secondaryBackground-dark hidden lg:block">
@@ -32,6 +31,11 @@ const RightDrawer = () => {
       </div>
       <SongList title={"Recently Played"} list={songs} />
       <SongList title={"My Playlists"} list={playlists} />
+      <div className="px-4 mt-8">
+        <button className="w-full py-2 px-4 bg-neutral-300 text-neutral-700 rounded-lg font-semibold">
+          Create New Playlists
+        </button>
+      </div>
     </div>
   );
 };
