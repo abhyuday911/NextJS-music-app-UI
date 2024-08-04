@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const MainLayout = () => {
   return (
-    <div className="w-full px-4 md:px-10 lg:px-8 pb-20 overflow-y-auto max-h-screen">
+    <div className="w-full px-4 md:px-10 lg:px-8 pb-20 overflow-y-auto max-h-screen bg-background-dark">
       <SearchBar />
       <div className="flex h-[20vmax] bg-slate-600 rounded-lg my-6 mb-4 md:my-8 relative overflow-hidden cursor-pointer hover:scale-[1.01] duration-150">
         <Image
