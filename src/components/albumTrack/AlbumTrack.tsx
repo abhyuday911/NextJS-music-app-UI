@@ -16,8 +16,8 @@ const AlbumTrack: React.FC<Props> = ({ title, data }) => {
   return (
     <div className="w-full mt-2">
       <h1 className="text-2xl">{title}</h1>
-      <div className="w-full overflow-scroll flex  gap-4 custom-scrollbar px-1">
-        {data.map((item, index) => (
+      <div className="w-full overflow-scroll flex gap-4 md:gap-10 custom-scrollbar px-1">
+        {data.sort((a, b) => 0.5 - Math.random()).map((item, index) => (
           <AlbumCard
             key={index}
             title={item.title}
