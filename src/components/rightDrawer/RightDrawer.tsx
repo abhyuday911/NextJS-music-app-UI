@@ -32,7 +32,7 @@ const RightDrawer = () => {
       <SongList title={"Recently Played"} list={songs} />
       <SongList title={"My Playlists"} list={playlists} />
       <div className="px-4 mt-8">
-        <button className="w-full py-2 px-4 bg-neutral-300 text-neutral-700 rounded-lg font-semibold mb-4">
+        <button className="w-full py-2 px-4 bg-neutral-300 hover:bg-neutral-400 text-neutral-700 rounded-lg font-semibold mb-4">
           Create New Playlists
         </button>
       </div>

@@ -56,9 +56,9 @@ const Player = () => {
             <i className="ri-skip-forward-fill text-2xl"></i>
           </button>
         </div>
-        <div className="hidden md:flex items-center justify-end gap-3 md:gap-6 lg:w-1/3">
-          <div className="group relative">
-            <div className="absolute bottom-full left-3 opacity-85 hidden group-hover:flex transform p-2 rounded-2xl bg-[#222]  -rotate-90 origin-left justify-center items-center">
+        <div className="hidden md:flex items-center justify-end gap-3 md:gap-6 lg:w-1/3 h-full">
+          <div className="group relative h-full">
+            <div className="absolute top-0 left-3 opacity-85 hidden group-hover:flex transform p-2 rounded-2xl bg-[#222]  -rotate-90 origin-left justify-center items-center">
               <input
                 type="range"
                 name="audio"
@@ -66,8 +66,8 @@ const Player = () => {
                 className=""
               />
             </div>
-            <button>
-              <i className="ri-volume-up-fill text-2xl text-zinc-400 py-8"></i>
+            <button className="h-full">
+              <i className="ri-volume-up-fill text-2xl text-zinc-400 h-full"></i>
             </button>
           </div>
           <button>
