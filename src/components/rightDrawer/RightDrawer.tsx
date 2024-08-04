@@ -6,7 +6,7 @@ import { playlists } from "../../data/playLists";
 
 const RightDrawer = () => {
   return (
-    <div className="w-2/6 bg-secondaryBackground-dark hidden lg:block">
+    <div className="w-2/6 bg-secondaryBackground-dark hidden lg:block pb-20 overflow-y-auto h-screen">
       <div className="flex items-center justify-between text-zinc-400 pt-4 px-6 cursor-pointer">
         <div className="flex items-center gap-4">
           <Image
@@ -32,7 +32,7 @@ const RightDrawer = () => {
       <SongList title={"Recently Played"} list={songs} />
       <SongList title={"My Playlists"} list={playlists} />
       <div className="px-4 mt-8">
-        <button className="w-full py-2 px-4 bg-neutral-300 text-neutral-700 rounded-lg font-semibold">
+        <button className="w-full py-2 px-4 bg-neutral-300 text-neutral-700 rounded-lg font-semibold mb-4">
           Create New Playlists
         </button>
       </div>

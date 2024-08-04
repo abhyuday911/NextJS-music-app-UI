@@ -7,7 +7,7 @@ import "remixicon/fonts/remixicon.css";
 export default function Home() {
   return (
     <main className="h-screen relative text-neutral-300">
-      <div className="flex">
+      <div className="flex h-full">
         <MenuDrawer />
         <MainLayout />
         <RightDrawer />
