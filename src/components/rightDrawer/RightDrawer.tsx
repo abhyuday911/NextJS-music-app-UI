@@ -2,11 +2,13 @@ import Image from "next/image";
 import React from "react";
 import SongList from "../songLists/SongList";
 import { songs } from "../../data/songLists";
+import { playlists } from "../../data/playLists";
+
 
 const RightDrawer = () => {
   return (
     <div className="w-2/6 bg-secondaryBackground-dark hidden lg:block">
-      <div className="flex items-center justify-between text-zinc-400 p-4 px-6 cursor-pointer mb-4">
+      <div className="flex items-center justify-between text-zinc-400 pt-4 px-6 cursor-pointer">
         <div className="flex items-center gap-4">
           <Image
             src="https://via.placeholder.com/50"
@@ -29,7 +31,7 @@ const RightDrawer = () => {
         </div>
       </div>
       <SongList title={"Recently Played"} list={songs} />
-      <SongList title={"My Playlists"} list={songs} />
+      <SongList title={"My Playlists"} list={playlists} />
     </div>
   );
 };
